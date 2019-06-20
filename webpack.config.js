@@ -27,6 +27,7 @@ module.exports = {
         new webpack.ProgressPlugin(),
         new HtmlPlugin({
             template: paths.template,
+            filename: '../index.html',
         }),
     ],
 };
