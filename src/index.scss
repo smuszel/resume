@@ -127,6 +127,11 @@ body {
         font-weight: 700;
         text-decoration: underline;
         margin-bottom: 14px;
+        transition: 1s;
+    }
+
+    h3:hover {
+        color: black;
     }
 }
 
