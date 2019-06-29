@@ -7,8 +7,8 @@ const paths = {
     template: path.resolve(__dirname, 'src', 'index.html'),
 };
 
-/** @type {webpack.Configuration} */
-module.exports = {
+/** @returns {webpack.Configuration} */
+module.exports = (_, argv) => ({
     entry: {
         index: paths.index,
     },
@@ -27,7 +27,7 @@ module.exports = {
         new webpack.ProgressPlugin(),
         new HtmlPlugin({
             template: paths.template,
-            filename: '../index.html',
+            filename: argv.mode === 'production' ? '../index.html' : 'index.html',
         }),
     ],
-};
+});
