@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const HtmlPlugin = require('html-webpack-plugin');
+const CSSExtract = require('mini-css-extract-plugin');
 const path = require('path');
 
 const paths = {
@@ -17,7 +18,16 @@ module.exports = (_, argv) => ({
     },
     module: {
         rules: [
-            { test: /\.scss/, use: ['style-loader', 'css-loader', 'sass-loader'] },
+            {
+                test: /\.(sc|c)ss/,
+                use: [
+                    {
+                        loader: CSSExtract.loader,
+                    },
+                    'css-loader',
+                    'sass-loader',
+                ],
+            },
             { test: /\.png/, use: 'file-loader' },
             { test: /\.svg/, use: 'svg-url-loader' },
         ],
@@ -25,6 +35,7 @@ module.exports = (_, argv) => ({
     devtool: 'source-map',
     plugins: [
         new webpack.ProgressPlugin(),
+        new CSSExtract(),
         new HtmlPlugin({
             template: paths.template,
             filename: argv.mode === 'production' ? '../index.html' : 'index.html',
