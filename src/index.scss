@@ -248,13 +248,19 @@ li::before {
     height: 60px;
 }
 
+@media print {
+    .i-ciss {
+        clip-path: inset(8% 15% 9% 4%) !important;
+    }
+}
+
 .i-ciss {
     float: right;
     margin-right: 59px;
     margin-bottom: 3px;
     width: 62px;
     height: 62px;
-    clip-path: inset(8% 15% 9% 4%);
+    clip-path: inset(6% 12% 5% 4%);
 }
 
 .i-star {
