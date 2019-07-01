@@ -120,6 +120,7 @@ body {
   padding: 30px;
   font-size: 15px; }
   .contents-bottom h3 {
+    padding-top: 10px;
     display: flex;
     justify-content: center; }
 
@@ -176,7 +177,7 @@ li::before {
   .field .languages {
     display: flex;
     flex-direction: column;
-    height: 465px;
+    height: 401px;
     padding-top: 20px;
     justify-content: space-between; }
     .field .languages .language-container {
