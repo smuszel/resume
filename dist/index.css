@@ -70,22 +70,22 @@ body {
   height: 1200px;
   width: 800px; }
 
-.title {
+header {
   padding: 20px 30px;
   background-color: #374458;
   color: white; }
-  .title h1 {
+  header h1 {
     font-weight: 400;
     font-size: 30px; }
-  .title h2 {
+  header h2 {
     margin-top: 4px;
     font-weight: 300;
     color: #5090cd;
     font-size: 20px; }
-  .title p {
+  header p {
     margin-top: 14px;
     font-size: 15px; }
-  .title-summary {
+  header-summary {
     background-color: #2b353f; }
 
 .infos {
@@ -107,7 +107,7 @@ body {
       font-size: 13px;
       text-decoration: underline; }
 
-.contents-container {
+main {
   margin: 0 30px;
   display: flex;
   justify-content: left; }
@@ -116,10 +116,10 @@ body {
   width: 620px;
   margin-right: 80px; }
 
-.contents-bottom {
+footer {
   padding: 30px;
   font-size: 15px; }
-  .contents-bottom h3 {
+  footer h3 {
     padding-top: 10px;
     display: flex;
     justify-content: center; }
@@ -142,55 +142,56 @@ li::before {
   content: "• ";
   color: #5090cd; }
 
-.field {
+article {
   margin-top: 30px; }
-  .field .keypoints {
+  article .keypoints {
     font-size: 15px;
     padding: 0;
     margin: 0; }
-  .field .general-skills {
+  article .general-skills {
     display: flex;
-    flex-wrap: wrap; }
-    .field .general-skills div {
+    flex-wrap: wrap;
+    list-style: none; }
+    article .general-skills div {
       margin: 0 15px 10px 0;
       font-size: 15px;
       background-color: #5090cd;
       padding: 8px;
       border-radius: 5px;
       color: white; }
-  .field h4 {
+  article h4 {
     font-size: 21px;
     font-weight: 700; }
-  .field h5 {
+  article h5 {
     font-size: 18px;
     font-weight: 400; }
-  .field .daterange {
+  article .daterange {
     font-size: 14px;
     font-style: italic;
     margin: 5px 0;
     color: #5090cd; }
-  .field .description {
+  article .description {
     font-size: 14px;
     font-style: italic;
     color: #7C7C7C;
     margin-bottom: 3px; }
-  .field .languages {
+  article .languages {
     display: flex;
     flex-direction: column;
     height: 401px;
     padding-top: 8px;
     justify-content: space-between; }
-    .field .languages .language-container {
+    article .languages .language-container {
       display: flex;
       align-items: center;
       justify-content: space-between; }
-      .field .languages .language-container p {
+      article .languages .language-container p {
         width: 90px;
         text-transform: capitalize; }
-      .field .languages .language-container .i-lang {
+      article .languages .language-container .i-lang {
         width: 35px;
         height: 35px; }
-      .field .languages .language-container .rating {
+      article .languages .language-container .rating {
         display: flex;
         justify-content: space-around;
         width: 135px; }
