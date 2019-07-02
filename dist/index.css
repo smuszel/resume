@@ -178,7 +178,7 @@ li::before {
     display: flex;
     flex-direction: column;
     height: 401px;
-    padding-top: 20px;
+    padding-top: 8px;
     justify-content: space-between; }
     .field .languages .language-container {
       display: flex;
