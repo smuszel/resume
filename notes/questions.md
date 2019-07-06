@@ -6,10 +6,12 @@
 * which tools do you use on fe
 * what is your coverage in testing unit and e2e
 * who writes e2e
-* how your deployment pipeline/procedure looks like
+* how your deployment pipeline/procedure looks like (+ demo/dev/prod envs)
 * what do you think of functional programming 
 * does the codebase look like it was written by single programmer
 * how much duplication is in the codebase
+* do you use caching and code splitting
+* do you track errors in production env
 
 ### Communication
 * what is a process of developing feature, lets add button, describe to me how it goeas from idea to production

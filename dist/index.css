@@ -88,21 +88,21 @@ header {
   header-summary {
     background-color: #2b353f; }
 
-.infos {
+address {
   margin: 0;
   background-color: #2b353f;
   height: 43px;
   display: flex;
   justify-content: center;
   align-items: center; }
-  .infos a {
+  address a {
     text-decoration: none; }
-    .infos a .i {
+    address a .i {
       filter: invert(1);
       vertical-align: -15%;
       margin-right: 6px;
       margin-left: 14px; }
-    .infos a .info-text {
+    address a .info-text {
       color: white;
       font-size: 13px;
       text-decoration: underline; }
