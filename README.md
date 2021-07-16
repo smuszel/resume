@@ -1,4 +1,3 @@
 # Welcome :wave:
 
-### This is root repo for developing my CV. 
-### Go to [stanislawmuszel.com](http://stanislawmuszel.com/)
+### This is root repo my CV. [Latest version](https://smuszel.github.io/resume/)
